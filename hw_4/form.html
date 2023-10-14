@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+<body>
+<form action="#" method="get " name="register">
+    <label>
+        <h3>Повне ім'я</h3>
+        <input type="text" name="full_name" placeholder="Повне ім'я" required />
+    </label>
+    <label>
+        <h3>Email</h3>
+        <input type="email" name="email" placeholder="Email" required />
+    </label>
+    <label>
+        <h3>Пароль</h3>
+        <input type="password" name="Password" placeholder="Пароль" required />
+    </label>
+    <label>
+        <h3>Повторити пароль</h3>
+        <input type="password" name="Password" placeholder="Повторити пароль" required />
+    </label>
+    <div class="radio">
+        <h3>Стать</h3>
+    <label>
+        <input name="sex" type="radio">
+        <h3>Жінка</h3>
+    <input name="sex" type="radio">
+    <h3>Чоловік</h3>
+</label>
+</div>
+<label>
+<h3>Вік</h3>
+<input type="number" name="age" placeholder="Вік" min="18" required />
+</label>
+<label>
+    <h3>Виберіть курс</h3>
+<select name="select">
+    <option value="">-=Select=-</option>
+    <option value="">Front-End</option>
+    <option value="">Back-End</option>
+    <option value="">Project Management</option>
+    <option value="">QA Manual</option>
+</select>
+</label>
+<label>
+    <h3>Повна адреса</h3>
+    <textarea name="message"  placeholder="Повна адреса" cols="50" rows="4"></textarea>
+    </label>
+    <label class="checkbox">
+        <div><input type="checkbox" name="checkbox"></div>
+        <h4>Я погоджуюсь з обробкою персональних даних</h4>
+        </label>
+<div class="button">
+    <button type="reset">Очистити форму</button>
+    <button type="submit">Зареєструватися</button>
+</div>
+</form>
+</body>
+</html>
